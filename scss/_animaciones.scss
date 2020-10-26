@@ -1,0 +1,23 @@
+@import "variables";
+
+/*Animaciones*/
+
+.button--primary:hover {
+    background-color: $gris-claro;
+    a {
+        color: $azul-medio;
+    }
+}
+.button--secondary:hover {
+    background-color: $azul-medio;
+    color: $blanco;
+}
+header .header__navigation li a:hover {
+    color: $amarillo;
+    text-decoration: none;
+    font-size: 1.7em;
+}
+footer .footer-navigation ul li a:hover {
+    text-decoration: none;
+    color:$azul-medio;
+}

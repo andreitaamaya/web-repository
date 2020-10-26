@@ -1,0 +1,43 @@
+@import "variables";
+
+/*Botones*/
+
+.button--check {
+    font-size: 30px;
+    color: $blanco;
+    line-height: 8px;
+    cursor: pointer;
+    display:none;
+}
+#check {
+    display:none;
+}
+.button {
+    border-radius: 4px;
+}
+.button--primary {
+    background-color: $azul-medio;
+ 	text-align: center;
+	margin:3%;
+	border-radius: 4px;
+	border-style: none;
+    transition: background-color 0.1s;
+    height: 50px;
+    a {
+        text-decoration: none;
+	    text-align:center;
+	    text-transform: uppercase;
+        font-family: $texto-general;
+        font-size: 1.1rem;
+	    font-weight: 200;
+	    color: $blanco;
+    }
+}
+.button--secondary {
+    border-style: none;
+    background-color: $gris-claro;
+    color: $azul-medio;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 25px;
+}

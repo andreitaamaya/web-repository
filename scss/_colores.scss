@@ -1,0 +1,83 @@
+@import "variables";
+
+/*Colores*/
+
+body {
+    background-color: $blanco;
+}
+header {
+    background-color: $azul-oscuro;
+    .header__navigation {
+        li {
+            a {
+                color: $blanco;
+            }
+        }
+    }
+}
+section#hero-box {
+    width: 100%;
+    background-image: url(../images/index/hero-box.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: $azul-oscuro
+}
+p.texto-gigante {
+    color: $azul-oscuro;
+}
+p.link-index {
+    a {
+        color: $negro; 
+    }
+}
+h2 {
+    color: $azul-oscuro;
+}
+p.texto-general {
+    color: $negro;
+}
+section#metodologia {
+    background-color: $gris-medio;
+}
+section#nuestros-clientes {
+    background-color: $gris-medio;
+}
+footer {
+    background-color: $gris-oscuro;
+    .footer-navigation {
+        ul {
+            li {
+                a {
+                    color: $blanco;
+                }
+            }
+        }
+    }
+    p {
+        color:$blanco;
+    }
+}
+.fila-seccion {
+    color: $gris-medio;
+}
+h3 {
+    color:$negro;
+}
+p.descripcion-equipo {
+    color:$negro;
+}
+section.boton-call-to-action {
+    background-color: $gris-medio;
+}
+div#imagen-fondo {
+    background-image: url(../images/servicios/nuestra-metodologia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.imagen-gracias {
+    background-image: url(../images/gracias-imagen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
