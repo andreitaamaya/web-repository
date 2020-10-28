@@ -137,6 +137,16 @@ div.imagen-gracias {
     margin: 2% 0 2% 0;
     padding-top: 5%;
 }
+div.fila-portafolio {
+    margin: 2% 0 2% 0;
+    position: relative;
+    z-index: -100;
+}
+.container-contacto {
+    margin: 2% 0 5% 0;
+    position: relative;
+    z-index: -200;
+}
 /*Bucles*/
 @for $i from 1 through 10 {
     .container-#{$i} {width: 10%*$i}
