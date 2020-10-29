@@ -118,13 +118,23 @@
         margin: 3% 0;
     }
     div#imagen-fondo {
-        height: 80vh;
+        height: 60vh;
     }
     .fila-elemento {
         margin: 0 3%;
     }
-    @for $i from 3 through 10 {
+    svg.team-work {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+       @for $i from 3 through 10 {
         .container-#{$i} {width: 100%}
     }
 }
- 
+
+@media screen and (max-width: 768px) {
+    div#imagen-fondo {
+        height: 80vh;
+    }
+}
