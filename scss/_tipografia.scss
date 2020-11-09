@@ -11,7 +11,7 @@ header {
     .header__navigation {
         li {
             a {
-                font-family: $navegacion-header;
+                font-family: $texto-titulos;
                 font-size: 1.6em;
                 font-weight: 500;
             }
@@ -19,7 +19,7 @@ header {
     }
 }
 h1 {
-    font-family: $titulos-pagina;
+    font-family: $texto-titulos;
     font-weight: 600;
     font-size: 2em;
     text-align: left;
@@ -28,7 +28,7 @@ h1 {
 }
 section#hero-box {
     h1.titulo-inicio {
-        font-family: $titulos-pagina;
+        font-family: $texto-titulos;
         font-weight: 500;
         font-size: 2em;
         text-align: left;
@@ -37,7 +37,7 @@ section#hero-box {
     }
 }
 p.texto-gigante {
-    font-family: $titulos-pagina;
+    font-family: $texto-titulos;
     font-weight: 500;
     font-size: 3.6em;
     text-align: left;
@@ -53,7 +53,7 @@ p.link-index {
     }
 }
 h2 {
-    font-family: $titulos-pagina;
+    font-family: $texto-titulos;
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 600;
@@ -85,7 +85,7 @@ footer {
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
-                    font-family: $titulos-pagina;
+                    font-family: $texto-titulos;
                     font-size: 1.5em;
                     font-weight: 500;
                 }
@@ -101,7 +101,7 @@ p.direccion {
 }
 h4 {
     font-size: 1.2em;
-    font-family: $titulos-pagina;
+    font-family: $texto-titulos;
     font-weight: 500;
 }
 .texto-mayuscula {
@@ -111,7 +111,7 @@ h4 {
     font-size: 1.2em;
 }
 h3 {
-    font-family: $titulos-pagina;
+    font-family: $texto-titulos;
     font-size: 1.8em;
     text-transform: capitalize;
     font-weight: 600;

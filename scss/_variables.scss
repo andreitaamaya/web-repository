@@ -1,3 +1,5 @@
+//colores 
+
 $gris-claro: #f3f3f3;
 $gris-medio: #e3e3e3;
 $amarillo: #ffc41f;
@@ -8,12 +10,20 @@ $azul-oscuro: #00007c;
 $gris-secundario: #cccccc;
 $negro: #000000;
 $blanco: #ffffff;
-$rosa-claro: #f29898;
-$celeste: hsl(229, 68%, 71%);
-$navy: #0e1849;
 $gris-pleno:#303030;
 
+
+//familias tipográficas
+
 $texto-general:'Roboto', sans-serif;
-$titulos-pagina: 'Poppins', sans-serif;
-$navegacion-header: 'Poppins', sans-serif;
-$navegacion-footer: 'Poppins', sans-serif;
+$texto-titulos: 'Poppins', sans-serif;
+
+//mixins 
+
+@mixin flex-box ($justify-content, $flex-direction, $wrap) {
+    display: flex;
+    flex-flow: $flex-direction $wrap;
+    justify-content: $justify-content;
+    align-content: center;
+    align-items: center;    
+}
