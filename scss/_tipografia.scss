@@ -130,5 +130,11 @@ div.container {
 }
 p.texto-carrusel {
     font-size: 1.8em;
-
+    color: $blanco;
+    background-color: rgba(0,0,0,.5);
+}
+h5 {
+    color: $blanco;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.5);
 }

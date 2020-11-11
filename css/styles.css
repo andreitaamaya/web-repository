@@ -143,7 +143,7 @@ div.imagen-gracias {
 div.fila-portafolio {
   margin: 2% 0 2% 0;
   position: relative;
-  z-index: -100; }
+  z-index: -10; }
 
 .container-contacto {
   margin: 2% 0 5% 0;
@@ -356,7 +356,14 @@ div.container label {
   font-size: 1.6em; }
 
 p.texto-carrusel {
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+h5 {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 /*Botones*/
 .button--check {
