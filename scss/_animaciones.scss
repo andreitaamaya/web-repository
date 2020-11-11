@@ -4,13 +4,25 @@
 
 .button--primary:hover {
     background-color: $gris-claro;
+    box-shadow: $button-shadow;
+    transition-duration: 0.4s;
     a {
         color: $azul-medio;
+        font-weight: 500;
     }
 }
 .button--secondary:hover {
     background-color: $azul-medio;
     color: $blanco;
+    box-shadow: $button-shadow;
+}
+p.link-index {
+    .button--terciary:hover {
+        @extend .button--secondary:hover;
+        a {
+            color: $blanco;
+        }
+    }
 }
 header .header__navigation li a:hover {
     color: $amarillo;
@@ -20,4 +32,21 @@ header .header__navigation li a:hover {
 footer .footer-navigation ul li a:hover {
     text-decoration: none;
     color:$azul-medio;
+}
+.texto-animado {
+    animation: barrido-texto 1s cubic-bezier(.25,.1,.25,1);
+}
+@keyframes barrido-texto {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+div.fila-elemento img:hover {
+    cursor: pointer;
+    
 }

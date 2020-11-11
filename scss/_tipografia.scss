@@ -20,8 +20,8 @@ header {
 }
 h1 {
     font-family: $texto-titulos;
-    font-weight: 600;
-    font-size: 2em;
+    font-weight: 700;
+    font-size: 2.5em;
     text-align: left;
     text-transform: uppercase;
     margin: 0 0 3% 8%;
@@ -45,9 +45,8 @@ p.texto-gigante {
 }
 p.link-index {
     a {
-        text-decoration: underline;
+        text-decoration: none;
         text-transform: uppercase;
-        margin: 3% 0 3% 8%;
         font-family: $texto-general;
         font-size: 1.2em;
     }
@@ -128,4 +127,8 @@ div.container {
     label {
         font-size: 1.6em;
     }
+}
+p.texto-carrusel {
+    font-size: 1.8em;
+
 }

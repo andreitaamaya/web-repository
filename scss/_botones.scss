@@ -41,3 +41,13 @@
     text-transform: uppercase;
     height: 25px;
 }
+.button--terciary {
+    border: 2px solid $azul-medio;
+    background-color: $blanco;
+    color: $azul-medio;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 25px;
+    width: auto;
+    margin: 3% 0 3% 8%
+}

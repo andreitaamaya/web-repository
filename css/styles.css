@@ -9,6 +9,7 @@ nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  align-content: center;
   align-items: center;
   height: 60px;
   position: sticky;
@@ -16,11 +17,12 @@ nav {
   nav .header__logo img {
     height: 25px; }
   nav .header__navigation {
-    list-style: none;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    align-content: center;
     align-items: center;
+    list-style: none;
     width: 60%;
     margin: 0;
     padding: 0; }
@@ -31,7 +33,7 @@ nav {
         text-transform: uppercase; }
 
 section#hero-box {
-  height: 45vh;
+  height: 55vh;
   margin: 0;
   padding-top: 3%; }
 
@@ -49,8 +51,9 @@ section#metodologia {
 
 .fila-elemento {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   justify-content: center;
+  align-content: center;
   align-items: center; }
 
 .container-4 {
@@ -83,12 +86,12 @@ footer {
 .footer-navigation {
   margin-bottom: 5%; }
   .footer-navigation ul {
-    list-style: none;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
+    list-style: none;
     margin-left: 2%;
     margin-right: 2%;
     padding: 0; }
@@ -147,6 +150,9 @@ div.fila-portafolio {
   position: relative;
   z-index: -200; }
 
+p.direccion {
+  margin: 0; }
+
 /*Bucles*/
 .container-1 {
   width: 10%; }
@@ -200,7 +206,7 @@ p.texto-gigante {
   color: #00007c; }
 
 p.link-index a {
-  color: #000000; }
+  color: #3f30f5; }
 
 h2 {
   color: #00007c; }
@@ -255,8 +261,8 @@ header .header__navigation li a {
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 2em;
+  font-weight: 700;
+  font-size: 2.5em;
   text-align: left;
   text-transform: uppercase;
   margin: 0 0 3% 8%; }
@@ -277,9 +283,8 @@ p.texto-gigante {
   margin: 3% 8% 3% 8%; }
 
 p.link-index a {
-  text-decoration: underline;
+  text-decoration: none;
   text-transform: uppercase;
-  margin: 3% 0 3% 8%;
   font-family: "Roboto", sans-serif;
   font-size: 1.2em; }
 
@@ -350,6 +355,9 @@ p.descripcion-equipo {
 div.container label {
   font-size: 1.6em; }
 
+p.texto-carrusel {
+  font-size: 1.8em; }
+
 /*Botones*/
 .button--check {
   font-size: 30px;
@@ -389,14 +397,31 @@ div.container label {
   text-transform: uppercase;
   height: 25px; }
 
+.button--terciary {
+  border: 2px solid #3f30f5;
+  background-color: #ffffff;
+  color: #3f30f5;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 25px;
+  width: auto;
+  margin: 3% 0 3% 8%; }
+
 /*Animaciones*/
 .button--primary:hover {
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s; }
   .button--primary:hover a {
-    color: #3f30f5; }
+    color: #3f30f5;
+    font-weight: 500; }
 
-.button--secondary:hover {
+.button--secondary:hover, p.link-index .button--terciary:hover {
   background-color: #3f30f5;
+  color: #ffffff;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+p.link-index .button--terciary:hover a {
   color: #ffffff; }
 
 header .header__navigation li a:hover {
@@ -408,14 +433,30 @@ footer .footer-navigation ul li a:hover {
   text-decoration: none;
   color: #3f30f5; }
 
+.texto-animado {
+  animation: barrido-texto 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
+
+@keyframes barrido-texto {
+  from {
+    opacity: 0;
+    transform: translateX(-30px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+div.fila-elemento img:hover {
+  cursor: pointer; }
+
 /*Media Queries*/
 @media screen and (max-width: 992px) {
   body {
     overflow-x: hidden; }
   header nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
     header nav .button--check {
       display: block; }
     header nav .header__navigation {
@@ -427,14 +468,16 @@ footer .footer-navigation ul li a:hover {
       right: -100%;
       text-align: center;
       display: flex;
-      flex-direction: column;
+      flex-flow: column nowrap;
       justify-content: flex-start;
+      align-content: center;
+      align-items: center;
       z-index: 1000000000000000000000000 !important;
       transition: all 0.5s; }
       header nav .header__navigation li {
         display: block;
-        margin: 20px;
-        line-height: 20px; }
+        margin: 30px;
+        line-height: 30px; }
         header nav .header__navigation li a {
           color: #00007c;
           font-weight: 600; }
@@ -457,8 +500,8 @@ footer .footer-navigation ul li a:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
     align-content: center;
+    align-items: center;
     margin: 0;
     padding: 0 8% 0 0; }
   section#hero-box {
